@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Instagram</title>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand text-secondary ms-5 ps-5" href="index.html">
+            <i class="fab fa-instagram"></i>
+            Instagram
+          </a>
+
+            <div class="d-flex pe-5">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Create a new post
+            </button>
+            
+            <!-- dropdown menu -->
+            <div class="dropdown">
+              <button class="btn btn-light dropdown-toggle text-secondary" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fas fa-cog"></i>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenu2">
+                <li><button class="dropdown-item" type="button">Action</button></li>
+                <li><button class="dropdown-item" type="button">Another action</button></li>
+                <li><button class="dropdown-item" type="button">Something else here</button></li>
+                <div class="dropdown-divider"></div>
+                <li><button class="dropdown-item" type="button">Log out</button></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </nav>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div>
+                <div><textarea class="rounded" cols="55"></textarea></div>
+                <div class="modal-title"><i class="fas fa-camera border border-secondary rounded p-1" ></i> <i class="fas fa-map-marker-alt border border-secondary rounded p-1"></i></div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-success">Publish</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- submenu -->
+      <ul class="nav nav-pills p-3 justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active bg-secondary" aria-current="page" href="#"><i class="fas fa-th"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-secondary" href="feed.html"><i class="fas fa-square"></i></a>
+        </li>
+      </ul>
+    
+      <!-- grid of photos -->
+      <div class="container">
+        <div class="container" class="w-auto p-3">
+        <div class="row">
+          <div class="col-sm-4 col-md-4 p-1">
+            <img src="https://api.lorem.space/image/fashion?w=400&h=300">
+          </div>
+          <div class="col-sm-4 col-md-4 p-1">
+            <img src="https://api.lorem.space/image/watch?w=400&h=300">
+          </div>
+          <div class="col-sm-4 col-md-4 p-1">
+            <img src="https://api.lorem.space/image/furniture?w=400&h=300">
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 col-md-4 p-1">
+              <img src="https://api.lorem.space/image/album?w=400&h=300">
+            </div>
+            <div class="col-sm-4 col-md-4 p-1">
+              <img src="https://api.lorem.space/image/book?w=400&h=300">
+            </div>
+            <div class="col-sm-4 col-md-4 p-1">
+              <img src="https://api.lorem.space/image/face?w=400&h=300">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4 col-md-4 p-1">
+              <img src="https://api.lorem.space/image/shoes?w=400&h=300">
+            </div>
+            <div class="col-sm-4 col-md-4 p-1">
+              <img src="https://api.lorem.space/image/furniture?w=400&h=300">
+            </div>
+            <div class="col-sm-4 col-md-4 p-1">
+              <img src="https://api.lorem.space/image/game?w=400&h=300">
+            </div>
+          </div>
+      </div>
+    
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
